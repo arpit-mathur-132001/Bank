@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/bank.css">
+  <title>Bank</title>
+</head>
+<body>
+  <%-include("partials/nav")%>
+
+  <h1 class="title">Customers</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%for(let c of customers){%>
+        <tr>
+          <th><a href="/<%=c.id%>"></a><%=c.id%></th>
+          <td><%=c.name%></td>
+          <td><%=c.email%></td>
+          <td><%=c.balance%></td>
+        </tr>
+      <%}%> 
+    </tbody>
+  </table>
+
+
+  <script src="/js/bank.js"></script>
+</body>
+</html>

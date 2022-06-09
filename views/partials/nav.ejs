@@ -1,0 +1,40 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="/img/noun-bank-1759330.png" width="100" id="img">
+    </a>
+
+    <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div class="navbar-end navbar-menu" id="nav-links">
+    <a class="navbar-item" id="home" href="/">
+      Home
+    </a>
+
+    <a class="navbar-item" id="customers" href="/customers">
+      Customers
+    </a>
+
+    <a class="navbar-item" href="/transfer">
+      Transfer Money
+    </a>
+
+      <form class="field has-addons" id="search" action="/show" method="post">
+        <div class="control">
+          <input class="input" type="text" placeholder="Search by Customer's ID" name="id">
+        </div>
+        <div class="control">
+          <button class="button is-info">
+            Search
+          </button>
+        </div>
+      
+      </form>
+    
+  </div>
+</nav>
